@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowDown, ArrowRight } from "lucide-react";
+import vis from '../assets/images/vision.jpg'
+import phi from '../assets/images/phi.jpg'
 
 /* 
    REVEAL COMPONENT
@@ -180,7 +182,7 @@ const Vision = () => {
               >
 
                 <img
-                  src="/src/assets/images/vision.jpg"
+                  src={vis}
                   alt="Student at Vasant Valley School"
                   className="
                     h-[500px] w-full object-cover
@@ -600,7 +602,7 @@ const Vision = () => {
               <div className="group overflow-hidden rounded-[28px] lg:rounded-[40px]">
 
                 <img
-                  src="/src/assets/images/phi.jpg"
+                  src={phi}
                   alt="Life at Vasant Valley School"
                   className="
                     h-[380px] w-full object-cover

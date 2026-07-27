@@ -6,11 +6,19 @@ import {
   Maximize2,
   X,
 } from "lucide-react";
+import cssImg from "../../assets/images/css.jpg";
+import sportsImg from "../../assets/images/sports.jpg";
+import musicImg from "../../assets/images/musics.jpg";
+import synapseImg from "../../assets/images/synapse_2026_5-300x200.jpeg";
+import laissezFaireImg from "../../assets/images/laissez_faire_2026_4-1-300x200.jpeg";
+import educationApproachImg from "../../assets/images/educationapproach.jpeg";
+import heroImg from "../../assets/images/vasant-valley-hero.jpeg";
+import tableTennisImg from "../../assets/images/Under-17-Girls-Table-Tennis--300x225.jpeg";
 
 const galleryImages = [
   {
     id: 1,
-    src: "/src/assets/images/css.jpg",
+    src: cssImg,
     title: "Learning Together",
     category: "Classroom",
     width: "w-[270px] sm:w-[330px] lg:w-[390px]",
@@ -18,7 +26,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: "/src/assets/images/sports.jpg",
+    src: sportsImg,
     title: "Beyond the Classroom",
     category: "Sports",
     width: "w-[310px] sm:w-[390px] lg:w-[460px]",
@@ -26,7 +34,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: "/src/assets/images/musics.jpg",
+    src: musicImg,
     title: "Space to Create",
     category: "Art & Expression",
     width: "w-[260px] sm:w-[320px] lg:w-[370px]",
@@ -34,7 +42,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "/src/assets/images/synapse_2026_5-300x200.jpeg",
+    src: synapseImg,
     title: "Question. Experiment. Discover.",
     category: "Science",
     width: "w-[320px] sm:w-[400px] lg:w-[470px]",
@@ -42,7 +50,7 @@ const galleryImages = [
   },
   {
     id: 5,
-    src: "/src/assets/images/laissez_faire_2026_4-1-300x200.jpeg",
+    src: laissezFaireImg,
     title: "Finding a Voice",
     category: "Music",
     width: "w-[270px] sm:w-[330px] lg:w-[380px]",
@@ -50,7 +58,7 @@ const galleryImages = [
   },
   {
     id: 6,
-    src: "/src/assets/images/educationapproach.jpeg",
+    src: educationApproachImg,
     title: "Growing Together",
     category: "Community",
     width: "w-[320px] sm:w-[400px] lg:w-[460px]",
@@ -58,7 +66,7 @@ const galleryImages = [
   },
   {
     id: 7,
-    src: "/src/assets/images/vasant-valley-hero.jpeg",
+    src: heroImg,
     title: "A Place to Belong",
     category: "Campus",
     width: "w-[270px] sm:w-[330px] lg:w-[390px]",
@@ -66,7 +74,7 @@ const galleryImages = [
   },
   {
     id: 8,
-    src: "/src/assets/images/Under-17-Girls-Table-Tennis--300x225.jpeg",
+    src: tableTennisImg,
     title: "Moments We Remember",
     category: "School Events",
     width: "w-[320px] sm:w-[400px] lg:w-[470px]",
@@ -85,9 +93,9 @@ const SchoolLifeGallery = () => {
 
   const duplicatedImages = [...galleryImages, ...galleryImages];
 
-  // ------------------------------------------------
+  // 
   // Calculate width of ONE complete gallery set
-  // ------------------------------------------------
+  // 
 
   useEffect(() => {
     const calculateWidth = () => {
@@ -112,9 +120,9 @@ const SchoolLifeGallery = () => {
     };
   }, []);
 
-  // ------------------------------------------------
+  // 
   // Infinite movement
-  // ------------------------------------------------
+  // 
 
   useAnimationFrame((time, delta) => {
     if (paused || dragging || selectedImage || loopWidth === 0) return;
@@ -135,9 +143,9 @@ const SchoolLifeGallery = () => {
     x.set(nextX);
   });
 
-  // ------------------------------------------------
+  // 
   // Keep dragged position inside loop
-  // ------------------------------------------------
+  // 
 
   const normalizePosition = () => {
     if (!loopWidth) return;
@@ -216,9 +224,9 @@ const SchoolLifeGallery = () => {
     setSelectedImage(galleryImages[nextIndex]);
   };
 
-  // ------------------------------------------------
+  // 
   // Prevent drag from opening lightbox
-  // ------------------------------------------------
+  // 
 
   const handleCardClick = (image) => {
     if (dragging) return;
@@ -230,9 +238,9 @@ const SchoolLifeGallery = () => {
     <>
       <section className="overflow-hidden bg-[#F7F4EF] pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pb-24 lg:pt-0">
 
-        {/* ============================================
+        {/* 
             HEADER
-        ============================================ */}
+         */}
 
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
 

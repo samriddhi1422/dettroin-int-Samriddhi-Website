@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Play, ArrowDown } from "lucide-react";
+import hero from '../../assets/images/vasant-valley-hero.jpeg'
 
 const Hero = () => {
   const [loaded, setLoaded] = useState(false);

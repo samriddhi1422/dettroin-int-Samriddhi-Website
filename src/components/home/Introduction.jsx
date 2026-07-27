@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import introduction from '../../assets/images/intoduction.png'
 
 const Introduction = () => {
   const sectionRef = useRef(null);
@@ -164,7 +165,7 @@ const Introduction = () => {
 
             <div className="group relative overflow-hidden rounded-[24px]">
               <img
-                src="/src/assets/images/intoduction.png"
+                src={introduction}
                 alt="Students at Vasant Valley School"
                 className="
                   intro-image

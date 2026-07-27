@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import education from '../../assets/images/educationapproach.jpeg'
 
 const values = [
   {
@@ -296,7 +297,7 @@ const EducationApproach = () => {
 
             <div className="group relative h-[280px] overflow-hidden rounded-[22px] sm:h-[380px] md:h-[460px] lg:h-[520px]">
               <img
-                src="/src/assets/images/educationapproach.jpeg"
+                src={education}
                 alt="Students learning together at Vasant Valley School"
                 className="
                   approach-image

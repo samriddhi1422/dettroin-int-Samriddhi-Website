@@ -6,7 +6,19 @@ import {
   Plus,
   Minus,
 } from "lucide-react";
+import staffImg from "../assets/images/staff.jpg";
+import educationApproachImg from "../assets/images/educationapproach.jpeg";
 
+import rekhaPurieImg from "../assets/images/Rekha-Purie-1.jpg";
+import aroonPurieImg from "../assets/images/Aroon-Purie-2.jpg";
+
+import vedVyasImg from "../assets/images/Ved-Vyas-1-1.jpg";
+import arunKapurImg from "../assets/images/Arun-Kapur-1.jpg";
+
+import sharmilaImg from "../assets/images/sharmila.jpg";
+import vijayTrivediImg from "../assets/images/vijay_trivedi_2-scaled.jpeg";
+import monaDattaImg from "../assets/images/mona-dutta.jpg";
+import johnImg from "../assets/images/john.jpg";
 /* 
    DATA
  */
@@ -15,12 +27,12 @@ const founders = [
   {
     name: "Rekha Purie",
     role: "Chairperson",
-    image: "/src/assets/images/Rekha-Purie-1.jpg",
+    image: rekhaPurieImg,
   },
   {
     name: "Aroon Purie",
     role: "Founder",
-    image: "/src/assets/images/Aroon-Purie-2.jpg",
+    image: aroonPurieImg,
   },
 ];
 
@@ -73,17 +85,17 @@ const currentLeadership = [
   {
     name: "Vijay Trivedi",
     role: "Head of Senior School",
-    image: "/src/assets/images/vijay_trivedi_2-scaled.jpeg",
+    image: vijayTrivediImg,
   },
   {
     name: "Mona Datta",
     role: "Head of Junior School",
-    image: "/src/assets/images/mona-dutta.jpg",
+    image: monaDattaImg,
   },
   {
     name: "A. P. John",
     role: "Administrative Head",
-    image: "/src/assets/images/john.jpg",
+    image: johnImg,
   },
 ];
 
@@ -201,7 +213,7 @@ const About = () => {
             <div className="h-[350px] overflow-hidden rounded-[28px] sm:h-[480px] lg:h-[570px] lg:rounded-[40px]">
 
               <img
-                src="/src/assets/images/staff.jpg"
+                src={staffImg}
                 alt="Vasant Valley School"
                 className="about-hero-image h-full w-full object-cover"
               />
@@ -300,7 +312,7 @@ const About = () => {
           <div className="group mt-16 overflow-hidden rounded-[28px] lg:mt-24 lg:rounded-[40px]">
 
             <img
-              src="/src/assets/images/educationapproach.jpeg"
+              src={educationApproachImg}
               alt="Students learning at Vasant Valley School"
               className="h-[320px] w-full object-cover transition-transform duration-[1600ms] group-hover:scale-[1.03] sm:h-[480px] lg:h-[620px]"
             />
@@ -505,7 +517,7 @@ const About = () => {
                   <div className="group max-w-[420px] overflow-hidden rounded-[24px] sm:rounded-[28px] lg:ml-auto">
 
                     <img
-                      src="/src/assets/images/Ved-Vyas-1-1.jpg"
+                      src={vedVyasImg}
                       alt="Ved Vyas"
                       className="h-[360px] w-full object-cover transition-transform duration-1000 group-hover:scale-[1.04] sm:h-[430px] lg:h-[480px]"
                     />
@@ -597,7 +609,7 @@ const About = () => {
                   <div className="group max-w-[420px] overflow-hidden rounded-[28px]">
 
                     <img
-                      src="/src/assets/images/Arun-Kapur-1.jpg"
+                      src={arunKapurImg}
                       alt="Arun Kapur"
                       className="h-[480px] w-full object-cover transition-transform duration-1000 group-hover:scale-[1.04]"
                     />
@@ -772,7 +784,7 @@ const About = () => {
               <div className="group min-h-[450px] overflow-hidden lg:min-h-[600px]">
 
                 <img
-                  src="/src/assets/images/sharmila.jpg"
+                  src={sharmilaImg}
                   alt="Sharmila Bakshi"
                   className="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-[1.035]"
                 />
@@ -1008,7 +1020,7 @@ const About = () => {
             <div className="group mt-16 overflow-hidden rounded-[28px]">
 
               <img
-                src="/src/assets/images/staff.jpg"
+                src={staffImg}
                 alt="Vasant Valley School staff"
                 className="h-[350px] w-full object-cover transition-transform duration-[1600ms] group-hover:scale-[1.03] sm:h-[500px] lg:h-[620px]"
               />

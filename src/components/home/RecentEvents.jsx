@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import synapse from '../../assets/images/synapse_2026_5-300x200.jpeg'
+import laissez from '../../assets/images/laissez_faire_2026_4-1-300x200.jpeg'
+import under from '../../assets/images/Under-17-Girls-Table-Tennis--300x225.jpeg'
 const events = [
   {
     id: 1,
     title: "Synapse 2026",
     date: "22–23 July 2026",
     label: "22 JUL",
-    image: "/src/assets/images/synapse_2026_5-300x200.jpeg",
+    image:synapse,
     featured: true,
   },
   {
@@ -16,14 +18,14 @@ const events = [
     title: "The 23rd Edition of Laissez Faire",
     date: "17 July 2026",
     label: "17 JUL",
-    image: "/src/assets/images/laissez_faire_2026_4-1-300x200.jpeg",
+    image: laissez,
   },
   {
     id: 3,
     title: "Inter-School Tennis Zonal Tournament 2026",
     date: "13–15 July 2026",
     label: "13 JUL",
-    image: "/src/assets/images/Under-17-Girls-Table-Tennis--300x225.jpeg",
+    image: under,
   },
 ];
 
