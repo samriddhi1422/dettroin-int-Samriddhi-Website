@@ -1,1 +1,97 @@
 @import "tailwindcss";
+
+/* ==========================================
+   ANNOUNCEMENTS PAGE
+========================================== */
+
+@keyframes announcementLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes announcementRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.announcement-left {
+  animation: announcementLeft 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.announcement-right {
+  animation: announcementRight 1s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+
+/* MARQUEE */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 24s linear infinite;
+}
+
+
+/* BOTTOM MOVING TEXT */
+
+@keyframes movingWord {
+  from {
+    transform: translateX(5%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.moving-word {
+  width: max-content;
+  animation: movingWord 25s linear infinite;
+}
+
+
+/* Announcement hover */
+
+.announcement-row {
+  transition:
+    background-color 500ms ease,
+    padding 500ms ease;
+}
+
+.announcement-row:hover {
+  background-color: #f1ece7;
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-left,
+  .announcement-right,
+  .marquee-track,
+  .moving-word {
+    animation: none;
+  }
+}
