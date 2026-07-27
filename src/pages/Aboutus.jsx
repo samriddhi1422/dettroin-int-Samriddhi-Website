@@ -11,12 +11,12 @@ const founders = [
   {
     name: "Rekha Purie",
     role: "Chairperson",
-    image: "/src/assets/images/rekha-purie.jpg",
+    image: "/src/assets/images/Rekha-Purie-1.jpg",
   },
   {
     name: "Aroon Purie",
     role: "Founder",
-    image: "/src/assets/images/aroon-purie.jpg",
+    image: "/src/assets/images/Aroon-Purie-2.jpg",
   },
 ];
 
@@ -63,17 +63,17 @@ const currentLeadership = [
   {
     name: "Vijay Trivedi",
     role: "Head of Senior School",
-    image: "/src/assets/images/vijay-trivedi.jpg",
+    image: "/src/assets/images/vijay_trivedi_2-scaled.jpeg",
   },
   {
     name: "Mona Datta",
     role: "Head of Junior School",
-    image: "/src/assets/images/mona-datta.jpg",
+    image: "/src/assets/images/mona-dutta.jpg",
   },
   {
     name: "A. P. John",
     role: "Administrative Head",
-    image: "/src/assets/images/ap-john.jpg",
+    image: "/src/assets/images/john.jpg",
   },
 ];
 
@@ -91,9 +91,9 @@ const About = () => {
   return (
     <main className="overflow-hidden bg-[#F7F4EF] text-[#211B1C]">
 
-      {/* =====================================================
+      {/* 
           HERO
-      ===================================================== */}
+       */}
 
       <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-12 sm:px-8 lg:px-12 lg:pb-28 lg:pt-16">
         <div className="mb-8 flex items-center gap-4">
@@ -106,7 +106,7 @@ const About = () => {
 
         <div className="grid items-end gap-8 lg:grid-cols-[0.65fr_1.35fr]">
           <div className="relative z-10">
-            <h1 className="font-sans text-[clamp(5.5rem,12vw,11rem)] font-semibold leading-[0.72] tracking-[-0.08em]">
+            <h1 className="font-sans text-[clamp(5.5rem,12vw,11rem)] font-semibold leading-[0.72] tracking-[-0.08em] mr-15">
               ABOUT
               <span className="block">US</span>
             </h1>
@@ -120,7 +120,7 @@ const About = () => {
           <div className="relative lg:-ml-12">
             <div className="h-[350px] overflow-hidden rounded-[28px] sm:h-[480px] lg:h-[570px] lg:rounded-[40px]">
               <img
-                src="/src/assets/images/vasant-valley-hero.jpeg"
+                src="/src/assets/images/staff.jpg"
                 alt="Vasant Valley School"
                 className="h-full w-full object-cover"
               />
@@ -142,9 +142,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/*
           OUR BEGINNING
-      ===================================================== */}
+       */}
 
       <section className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <SectionLabel number="02" title="Our Beginning" />
@@ -189,9 +189,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           STATEMENT
-      ===================================================== */}
+       */}
 
       <section className="bg-[#8E1731]">
         <div className="mx-auto max-w-[1280px] px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
@@ -213,9 +213,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/*
           FOUNDERS
-      ===================================================== */}
+      */}
 
       <section className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
         <SectionLabel number="03" title="The Founders" />
@@ -275,9 +275,9 @@ const About = () => {
         </p>
       </section>
 
-      {/* =====================================================
-          SHAPING THE SCHOOL
-      ===================================================== */}
+      {/*
+          THE SCHOOL
+      */}
 
       <section className="bg-[#211B1C] text-[#F7F4EF]">
         <div className="mx-auto max-w-[1280px] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
@@ -297,45 +297,62 @@ const About = () => {
           <div className="relative mt-20 lg:mt-28">
             <div className="absolute bottom-0 left-[7px] top-0 w-px bg-white/20 lg:left-1/2" />
 
-            {/* Ved Vyas */}
-            <div className="relative grid pb-20 pl-10 lg:grid-cols-2 lg:gap-24 lg:pl-0">
-              <div className="hidden lg:block lg:pr-16">
-                <div className="ml-auto max-w-[420px] overflow-hidden rounded-[28px]">
-                  <img
-                    src="/src/assets/images/ved-vyas.jpg"
-                    alt="Ved Vyas"
-                    className="h-[480px] w-full object-cover"
-                  />
-                </div>
-              </div>
+           {/* Ved Vyas */}
+<div className="relative grid gap-8 pb-20 pl-10 lg:grid-cols-2 lg:gap-24 lg:pl-0">
 
-              <div className="lg:pl-16">
-                <span className="absolute left-0 top-1 h-[15px] w-[15px] rounded-full border-4 border-[#211B1C] bg-[#EBCDD2] lg:left-1/2 lg:-translate-x-1/2" />
+  {/* Image */}
+  <div className="lg:pr-16">
+    <div className="max-w-[420px] overflow-hidden rounded-[24px] sm:rounded-[28px] lg:ml-auto">
+      <img
+        src="/src/assets/images/Ved-Vyas-1-1.jpg"
+        alt="Ved Vyas"
+        className="
+          h-[360px] w-full object-cover
+          sm:h-[430px]
+          lg:h-[480px]
+        "
+      />
+    </div>
+  </div>
 
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#EBCDD2]">
-                  The early years
-                </p>
+  {/* Content */}
+  <div className="lg:pl-16">
+    <span
+      className="
+        absolute left-0 top-1
+        h-[15px] w-[15px]
+        rounded-full border-4
+        border-[#211B1C]
+        bg-[#EBCDD2]
+        lg:left-1/2
+        lg:-translate-x-1/2
+      "
+    />
 
-                <h3 className="mt-4 font-serif text-[40px] sm:text-[50px]">
-                  Mr. Ved Vyas
-                </h3>
+    <p className="text-[10px] uppercase tracking-[0.25em] text-[#EBCDD2]">
+      The early years
+    </p>
 
-                <div className="mt-6 max-w-[480px] space-y-5 text-[14px] leading-7 text-white/65">
-                  <p>
-                    Founder-Principal of Modern School, Vasant Vihar, Mr. Vyas
-                    worked closely with Mr. and Mrs. Purie during the initial
-                    years to establish Vasant Valley&apos;s vision and philosophy.
-                  </p>
+    <h3 className="mt-4 font-serif text-[40px] sm:text-[50px]">
+      Mr. Ved Vyas
+    </h3>
 
-                  <p>
-                    His love for Arts and Literature is reflected in the core
-                    curriculum of the School. He also wrote the lyrics of the
-                    School Song, &ldquo;Shreshtha Tamaya Karmane&rdquo; —
-                    Excellence in Deed.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div className="mt-6 max-w-[480px] space-y-5 text-[14px] leading-7 text-white/65">
+      <p>
+        Founder-Principal of Modern School, Vasant Vihar, Mr. Vyas
+        worked closely with Mr. and Mrs. Purie during the initial
+        years to establish Vasant Valley&apos;s vision and philosophy.
+      </p>
+
+      <p>
+        His love for Arts and Literature is reflected in the core
+        curriculum of the School. He also wrote the lyrics of the
+        School Song, &ldquo;Shreshtha Tamaya Karmane&rdquo; —
+        Excellence in Deed.
+      </p>
+    </div>
+  </div>
+</div>
 
             {/* Arun Kapur */}
             <div className="relative grid pl-10 lg:grid-cols-2 lg:gap-24 lg:pl-0">
@@ -374,7 +391,7 @@ const About = () => {
               <div className="mt-10 lg:mt-0 lg:pl-16">
                 <div className="max-w-[420px] overflow-hidden rounded-[28px]">
                   <img
-                    src="/src/assets/images/arun-kapur.jpg"
+                    src="/src/assets/images/Arun-Kapur-1.jpg"
                     alt="Arun Kapur"
                     className="h-[480px] w-full object-cover"
                   />
@@ -385,9 +402,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           LEGACY LEADERSHIP
-      ===================================================== */}
+     */}
 
       <section className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
         <SectionLabel number="05" title="Our Legacy" />
@@ -459,9 +476,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           CURRENT LEADERSHIP
-      ===================================================== */}
+      */}
 
       <section className="bg-[#EAE4DF]">
         <div className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
@@ -476,7 +493,7 @@ const About = () => {
           <div className="mt-16 grid overflow-hidden rounded-[30px] bg-[#F7F4EF] lg:grid-cols-[1.1fr_0.9fr]">
             <div className="min-h-[450px] lg:min-h-[600px]">
               <img
-                src="/src/assets/images/sharmila-bakshi.jpg"
+                src="/src/assets/images/sharmila.jpg"
                 alt="Sharmila Bakshi"
                 className="h-full w-full object-cover"
               />
@@ -537,9 +554,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           DEVELOPMENT AREAS
-      ===================================================== */}
+      */}
 
       <section className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
         <SectionLabel number="07" title="How We Work" />
@@ -589,9 +606,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/*
           STAFF
-      ===================================================== */}
+       */}
 
       <section className="bg-[#211B1C] text-white">
         <div className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
@@ -661,9 +678,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           ALUMNI
-      ===================================================== */}
+       */}
 
       <section className="mx-auto max-w-[1280px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
         <SectionLabel number="09" title="Alumni" />
@@ -730,9 +747,9 @@ const About = () => {
   );
 };
 
-/* =========================================================
+/* 
    REUSABLE PIECES
-========================================================= */
+ */
 
 const SectionLabel = ({ number, title }) => {
   return (

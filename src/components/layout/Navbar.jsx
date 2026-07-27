@@ -5,8 +5,8 @@ import logo from '../../assets/images/logo-vasant-valley.svg'
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
-  { name: "Vision & Philosophy", path: "/vision-philosophy" },
-  { name: "Announcements", path: "/announcements" },
+  { name: "Vision & Philosophy", path: "/vision" },
+  { name: "Announcements", path: "/announcement" },
   { name: "Contact Us", path: "/contact" },
 ];
 
