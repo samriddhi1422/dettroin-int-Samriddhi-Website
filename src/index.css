@@ -791,3 +791,284 @@ img {
     animation: none !important;
   }
 }
+
+
+/* 
+   HOME HERO ANIMATIONS
+ */
+
+
+/* BACKGROUND VASANT */
+
+.hero-bg-word {
+  animation: heroBackgroundFloat 9s ease-in-out infinite;
+}
+
+@keyframes heroBackgroundFloat {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -14px);
+  }
+}
+
+
+/* 
+   IMAGE — VERY SLOW CINEMATIC MOVEMENT
+ */
+
+.hero-main-image {
+  animation: heroImageBreath 14s ease-in-out infinite alternate;
+}
+
+@keyframes heroImageBreath {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.035);
+  }
+}
+
+
+/* Hover should override the animation */
+
+.group:hover .hero-main-image {
+  animation-play-state: paused;
+}
+
+
+/* 
+   PINK DECORATIVE BLOCK
+ */
+
+.hero-blush {
+  animation: heroBlushFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroBlushFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-5px, -7px) rotate(-1deg);
+  }
+}
+
+
+/* 
+   FLOATING CAPTION
+ */
+
+.hero-caption {
+  animation: heroCaptionFloat 5s 2s ease-in-out infinite;
+}
+
+@keyframes heroCaptionFloat {
+  0%,
+  100% {
+    margin-bottom: 0;
+  }
+
+  50% {
+    margin-bottom: 5px;
+  }
+}
+
+
+/* 
+   LOCATION DOT
+ */
+
+.hero-location-dot {
+  position: relative;
+}
+
+.hero-location-dot::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 9999px;
+  background: #8e1731;
+
+  animation: heroLocationPulse 2.2s ease-out infinite;
+}
+
+@keyframes heroLocationPulse {
+  0% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3.2);
+  }
+}
+
+
+/* 
+   ACCESSIBILITY
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-word,
+  .hero-main-image,
+  .hero-blush,
+  .hero-caption,
+  .hero-location-dot::after {
+    animation: none !important;
+  }
+}
+
+/* Education approach background text */
+
+.approach-vvs {
+  animation: approachVVS 8s ease-in-out infinite;
+}
+
+@keyframes approachVVS {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+
+/* Education approach image */
+
+.approach-image {
+  animation: approachImage 12s ease-in-out infinite alternate;
+}
+
+@keyframes approachImage {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.035);
+  }
+}
+
+.group:hover .approach-image {
+  animation-play-state: paused;
+}
+
+
+/* Decorative image border */
+
+.approach-image-border {
+  animation: approachBorder 5s ease-in-out infinite;
+}
+
+@keyframes approachBorder {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(5px, -5px);
+  }
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .approach-vvs,
+  .approach-image,
+  .approach-image-border {
+    animation: none !important;
+  }
+}
+
+/* Introduction pink block */
+
+.intro-pink-block {
+  animation: introPinkFloat 6s ease-in-out infinite;
+}
+
+@keyframes introPinkFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-5px, 6px) rotate(-1deg);
+  }
+}
+
+
+/* Introduction image */
+
+.intro-image {
+  animation: introImageMove 14s ease-in-out infinite alternate;
+}
+
+@keyframes introImageMove {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.035);
+  }
+}
+
+.group:hover .intro-image {
+  animation-play-state: paused;
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-pink-block,
+  .intro-image {
+    animation: none !important;
+  }
+}
+
+/* Featured event image */
+
+.event-featured-image {
+  animation: eventImageMove 14s ease-in-out infinite alternate;
+}
+
+@keyframes eventImageMove {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.035);
+  }
+}
+
+.group:hover .event-featured-image {
+  animation-play-state: paused;
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .event-featured-image {
+    animation: none !important;
+  }
+}
